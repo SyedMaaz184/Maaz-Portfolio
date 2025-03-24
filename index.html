@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaz-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(14, 2, 63);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(21, 4, 90);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .first-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 110px 0;
+        }
+
+        .first-section>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+        }
+
+        .rightsection img {
+            border-radius: 50%;
+            width: 70%;
+        }
+
+        .name-color {
+            color: rgb(42, 124, 240);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(143, 143, 247);
+            font-size: 1.04rem;
+        }
+
+        #element {
+            color: rgb(42, 124, 240);
+        }
+
+        .second-section {
+            max-width: 80vw;
+            margin : auto;
+            height: 80vh;
+        }
+
+        hr {
+            border: 0;
+            background: rgb(122, 175, 82);
+            height: 1px;
+            margin: 40px 80px;
+        }
+
+        .second-section h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .second-section .timeline {
+            background-color: white;
+            width: 80vw;
+            height: 1.5px;
+            margin: 56px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .second-section .vertical-rule {
+            height: 120px;
+            width: 1px;
+            background-color: white;
+        }
+
+        .second-section .timeline .timeline-image {
+            position: relative;
+            top: -10px;
+            left: -10px;
+            border-radius: 50%;
+            height: 25px;
+            width: 20px;
+        }
+
+        .second-section .timeline .vertical-text {
+            width: 180px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Maaz's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first-section">
+            <div class="leftsection">
+                Hello, My Name is <br><span class="name-color">Syed Maaz</span>
+                <div>I'm an ardent</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="student.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="second-section">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="timeline">
+                <div class="vertical-rule">
+                    <img class="timeline-image" src="student_timeline.jpeg" alt="png image of student">
+                    <div class="vertical-text">Schooling(2008-2020)</div>
+                </div>
+
+                <div class="vertical-rule"></div>
+                <div class="vertical-rule"></div>
+                <div class="vertical-rule"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Technophile', 'Student', 'Data Scientist'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
